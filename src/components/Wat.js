@@ -30,9 +30,6 @@ export default function Wat() {
           <option>Iets anders</option>
         </select>
       </div>
-      <button onClick={() => console.log(title, description, type)}>
-        Volgende stap
-      </button>
     </div>
   );
 }

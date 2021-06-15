@@ -10,7 +10,6 @@ export default function Waar() {
         value={locatie}
         onChange={(event) => setLocatie(event.target.value)}
       />
-      <button onClick={() => console.log(locatie)}>Volgende stap</button>
     </div>
   );
 }
