@@ -2,23 +2,15 @@ import React, { useState } from "react";
 import Waar from "../components/Waar";
 import Wat from "../components/Wat";
 
-export default function Afspraak(props) {
+export default function Afspraak() {
   const [step, setStep] = useState(1);
-  const { title, description, type, setTitle, setDescription, setType } = props;
 
   return (
     <div>
       AFSPRAAK
       {step === 1 && (
         <div>
-          <Wat
-            title={title}
-            setTitle={setTitle}
-            type={type}
-            setType={setType}
-            description={description}
-            setDescription={setDescription}
-          />
+          <Wat />
         </div>
       )}
       {step === 2 && (

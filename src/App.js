@@ -49,19 +49,10 @@ function App() {
 
           <Switch>
             <Route path="/afspraak-maken">
-              <Afspraak
-                title={title}
-                setTitle={setTitle}
-                description={description}
-                setDescription={setDescription}
-                type={type}
-                setType={setType}
-                locatie={locatie}
-                setLocatie={setLocatie}
-              />
+              <Afspraak />
             </Route>
             <Route path="/login">
-              <Login locatie={locatie} setLocatie={setLocatie} />
+              <Login />
             </Route>
             <Route path="/">
               <Home />
