@@ -1,9 +1,13 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useContext } from "react";
 
 // context is an object
 // export de context, zodat je hem elders kan importeren
 // gebruik export, niet export default
 export const datePickerContext = createContext({});
+
+export function useDatePicker() {
+  return useContext(datePickerContext);
+}
 
 export default function DatePickerProvider(props) {
   console.log("PROPS in DATEPICKERPROVDER:", props);
