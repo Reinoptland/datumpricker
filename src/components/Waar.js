@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-export default function Waar() {
-  const [locatie, setLocatie] = useState("");
+export default function Waar(props) {
+  const { locatie, setLocatie } = props;
   return (
     <div>
       <h3>Waar</h3>

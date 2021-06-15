@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 
-export default function Wat() {
-  const [title, setTitle] = useState("");
-  const [type, setType] = useState("");
-  const [description, setDescription] = useState("");
-
+export default function Wat(props) {
+  const { title, setTitle, description, setDescription, type, setType } = props;
   return (
     <div>
       <h3>Wat</h3>
