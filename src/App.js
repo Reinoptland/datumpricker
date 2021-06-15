@@ -43,7 +43,7 @@ function App() {
             />
           </Route>
           <Route path="/login">
-            <Login />
+            <Login locatie={locatie} setLocatie={setLocatie} />
           </Route>
           <Route path="/">
             <Home />
