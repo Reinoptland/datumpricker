@@ -5,6 +5,7 @@ import { Switch, Route, Link } from "react-router-dom";
 import Afspraak from "./pages/Afspraak";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Wat from "./components/Wat";
 
 // context is an object
 // export de context, zodat je hem elders kan importeren
@@ -44,6 +45,9 @@ function App() {
               <li>
                 <Link to="/login">Login</Link>
               </li>
+              <li>
+                <Link to="/wat">Wat</Link>
+              </li>
             </ul>
           </nav>
 
@@ -53,6 +57,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/wat">
+              <Wat />
             </Route>
             <Route path="/">
               <Home />
