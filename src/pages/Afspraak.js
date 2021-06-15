@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import Waar from "../components/Waar";
 import Wat from "../components/Wat";
 
-export default function Afspraak() {
+export default function Afspraak(props) {
   const [step, setStep] = useState(1);
-  const [title, setTitle] = useState("");
-  const [type, setType] = useState("");
-  const [description, setDescription] = useState("");
-  const [locatie, setLocatie] = useState("");
+  const {
+    title,
+    description,
+    type,
+    locatie,
+    setTitle,
+    setDescription,
+    setType,
+    setLocatie,
+  } = props;
 
   return (
     <div>
