@@ -1,5 +1,11 @@
 import React from "react";
+import Waar from "../components/Waar";
 
 export default function Home() {
-  return <div>HOME</div>;
+  return (
+    <div>
+      <Waar />
+      <Waar />
+    </div>
+  );
 }

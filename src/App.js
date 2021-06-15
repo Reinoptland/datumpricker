@@ -7,7 +7,9 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 
 // context is an object
-const datePickerContext = createContext({});
+// export de context, zodat je hem elders kan importeren
+// gebruik export, niet export default
+export const datePickerContext = createContext({});
 
 function App() {
   console.log("WAT IS CONTEXT VOOR EEN DING:", datePickerContext);

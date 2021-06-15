@@ -4,16 +4,7 @@ import Wat from "../components/Wat";
 
 export default function Afspraak(props) {
   const [step, setStep] = useState(1);
-  const {
-    title,
-    description,
-    type,
-    locatie,
-    setTitle,
-    setDescription,
-    setType,
-    setLocatie,
-  } = props;
+  const { title, description, type, setTitle, setDescription, setType } = props;
 
   return (
     <div>
@@ -32,7 +23,7 @@ export default function Afspraak(props) {
       )}
       {step === 2 && (
         <div>
-          <Waar locatie={locatie} setLocatie={setLocatie} />
+          <Waar />
         </div>
       )}
       <button onClick={() => setStep(step - 1)} disabled={step === 1}>

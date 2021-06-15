@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { datePickerContext } from "../App";
 
-export default function Waar(props) {
-  const { locatie, setLocatie } = props;
+export default function Waar() {
+  // const { locatie, setLocatie } = props;
+  // haal alle waardes uit de context
+  // const watIsDit = useContext(datePickerContext);
+  // console.log("WAT KRIJGEN WE NU:", watIsDit);
+  const { locatie, setLocatie } = useContext(datePickerContext);
   return (
     <div>
       <h3>Waar</h3>
