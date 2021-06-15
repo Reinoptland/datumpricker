@@ -1,7 +1,7 @@
 // 1. useContext
 import React, { useContext } from "react";
 // 2. datePickerContext -> curlies because we export 2 things from App.js
-import { datePickerContext } from "../App";
+import { datePickerContext } from "../contexts/DatePickerProvider";
 
 export default function Wat(props) {
   // const { title, setTitle, description, setDescription, type, setType } = props;

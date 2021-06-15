@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { datePickerContext } from "../App";
+import { datePickerContext } from "../contexts/DatePickerProvider";
 
 export default function Waar() {
   // const { locatie, setLocatie } = props;
